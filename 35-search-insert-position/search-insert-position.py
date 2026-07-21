@@ -11,11 +11,11 @@ class Solution(object):
             else:
                 left = mid + 1
         return left
-
-
         """
         :type nums: List[int]
         :type target: int
         :rtype: int
         """
+
+
         
