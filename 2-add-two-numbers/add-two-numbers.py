@@ -11,7 +11,6 @@ class Solution(object):
         while l1 or l2 or carry:
             value1 = l1.val if l1 else 0
             value2 = l2.val if l2 else 0
-
             total = value1 + value2 + carry
 
             carry = total // 10
