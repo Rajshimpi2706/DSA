@@ -1,5 +1,6 @@
 class Solution(object):
     def isValid(self, s):
+
         stack = []
         mapping = {
             ')':'(',
@@ -16,7 +17,7 @@ class Solution(object):
 
                 if not stack:
                     return False
-                    
+
                 top = stack.pop()
 
                 if top != mapping[i]:
