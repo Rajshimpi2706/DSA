@@ -8,7 +8,7 @@ class Solution(object):
         }
 
         for i in s:
-            
+
             if i in "([{":
                 stack.append(i)
 
@@ -16,6 +16,7 @@ class Solution(object):
 
                 if not stack:
                     return False
+                    
                 top = stack.pop()
 
                 if top != mapping[i]:
