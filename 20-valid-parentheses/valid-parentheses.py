@@ -6,12 +6,14 @@ class Solution(object):
             ']':'[',
             '}':'{'
         }
-        
+
         for i in s:
+            
             if i in "([{":
                 stack.append(i)
 
             else:
+
                 if not stack:
                     return False
                 top = stack.pop()
