@@ -5,8 +5,7 @@ e.salary AS Salary
 FROM Employee e
 JOIN Department d ON e.departmentId = d.id
 JOIN
-(
-    SELECT
+(   SELECT
         departmentId,
         MAX(salary) AS maxSalary
     FROM Employee
