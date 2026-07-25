@@ -16,6 +16,5 @@ FROM (
         AS salary_rank
     FROM Employee
 )e
-JOIN Department d 
-ON e.departmentID = d.id
+JOIN Department d ON e.departmentID = d.id
 WHERE e.salary_rank <= 3;
