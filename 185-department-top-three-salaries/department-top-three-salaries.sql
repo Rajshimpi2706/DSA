@@ -1,13 +1,15 @@
 # Write your MySQL query statement below
 SELECT 
 d.name AS Department, 
-e.name AS Employee, e.salary AS Salary
+e.name AS Employee, 
+e.salary AS Salary
 FROM (
     SELECT
         name,
         salary,
         departmentId,
-        DENSE_RANK() OVER (
+        DENSE_RANK() 
+        OVER (
             PARTITION BY departmentId
             ORDER BY salary DESC
         ) AS salary_rank
