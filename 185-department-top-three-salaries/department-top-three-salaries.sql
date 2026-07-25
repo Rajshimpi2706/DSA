@@ -12,7 +12,8 @@ FROM (
         OVER (
             PARTITION BY departmentId
             ORDER BY salary DESC
-        ) AS salary_rank
+        ) 
+        AS salary_rank
     FROM Employee
 )e
 JOIN Department d 
