@@ -36,7 +36,6 @@ class Solution(object):
                 result.append(solution)
                 return
 
-
             for col in range(n):
 
                 if isSafe(row, col):
@@ -46,7 +45,6 @@ class Solution(object):
                     backtrack(row + 1)
 
                     board[row][col] = "."
-
 
         backtrack(0)
 
