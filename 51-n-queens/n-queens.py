@@ -4,22 +4,18 @@ class Solution(object):
         board = [["." for _ in range(n)] for _ in range(n)]
 
         def isSafe(row, col):
-
             # Check column
             for i in range(row):
                 if board[i][col] == "Q":
                     return False
-
             # Check left diagonal
             i = row - 1
             j = col - 1
-
             while i >= 0 and j >= 0:
                 if board[i][j] == "Q":
                     return False
                 i -= 1
                 j -= 1
-
             # Check right diagonal
             i = row - 1
             j = col + 1
