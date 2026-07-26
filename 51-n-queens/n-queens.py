@@ -1,8 +1,6 @@
 class Solution(object):
     def solveNQueens(self, n):
-
         result = []
-
         board = [["." for _ in range(n)] for _ in range(n)]
 
         def isSafe(row, col):
