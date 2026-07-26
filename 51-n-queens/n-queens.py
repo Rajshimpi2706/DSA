@@ -19,18 +19,14 @@ class Solution(object):
             # Check right diagonal
             i = row - 1
             j = col + 1
-
             while i >= 0 and j < n:
                 if board[i][j] == "Q":
                     return False
                 i -= 1
                 j += 1
-
             return True
 
-
         def backtrack(row):
-
             if row == n:
                 solution = []
 
