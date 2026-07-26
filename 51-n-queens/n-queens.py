@@ -45,9 +45,7 @@ class Solution(object):
                     backtrack(row + 1)
 
                     board[row][col] = "."
-
         backtrack(0)
-
         return result
         """
         :type n: int
