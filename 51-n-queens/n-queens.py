@@ -31,7 +31,6 @@ class Solution(object):
                 solution = []
                 for r in board:
                     solution.append("".join(r))
-
                 result.append(solution)
                 return
 
