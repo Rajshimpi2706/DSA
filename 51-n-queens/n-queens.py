@@ -33,9 +33,7 @@ class Solution(object):
                     solution.append("".join(r))
                 result.append(solution)
                 return
-
             for col in range(n):
-
                 if isSafe(row, col):
 
                     board[row][col] = "Q"
