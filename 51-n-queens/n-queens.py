@@ -29,7 +29,6 @@ class Solution(object):
         def backtrack(row):
             if row == n:
                 solution = []
-
                 for r in board:
                     solution.append("".join(r))
 
