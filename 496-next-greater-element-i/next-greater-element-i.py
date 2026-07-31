@@ -9,15 +9,11 @@ class Solution(object):
             while stack and num > stack[-1]:
                 smaller = stack.pop()
                 next_greater[smaller] = num
-
             stack.append(num)
-
         # Remaining elements have no next greater element
         while stack:
             next_greater[stack.pop()] = -1
-
         result = []
-
         # Build answer for nums1
         for num in nums1:
             result.append(next_greater[num])
