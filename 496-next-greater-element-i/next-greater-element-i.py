@@ -1,7 +1,5 @@
 class Solution(object):
     def nextGreaterElement(self, nums1, nums2):
-    
-
         stack = []
         next_greater = {}
 
