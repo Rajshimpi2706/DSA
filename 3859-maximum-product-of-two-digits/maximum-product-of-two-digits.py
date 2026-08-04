@@ -13,5 +13,4 @@ class Solution(object):
 
             elif digit > second:
                 second = digit
-
         return first * second
