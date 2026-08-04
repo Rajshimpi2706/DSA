@@ -10,7 +10,6 @@ class Solution(object):
             if digit > first:
                 second = first
                 first = digit
-
             elif digit > second:
                 second = digit
         return first * second
