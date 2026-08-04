@@ -3,7 +3,6 @@ class Solution(object):
 
         first = 0
         second = 0
-
         for digit in str(n):
             digit = int(digit)
             if digit > first:
