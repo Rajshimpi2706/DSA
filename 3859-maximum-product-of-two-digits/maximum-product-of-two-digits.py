@@ -6,7 +6,6 @@ class Solution(object):
 
         for digit in str(n):
             digit = int(digit)
-
             if digit > first:
                 second = first
                 first = digit
